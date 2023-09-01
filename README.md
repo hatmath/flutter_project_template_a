@@ -1,16 +1,24 @@
 # flutter_project_template_a
 
-A new Flutter project.
+# ENTÊTE
+   
+    Projet: 	flutter_project_template_a, template A pour des projets Flutter
+    Codeurs:	Mathieu Hatin (2296939)
+    Cours: 		Apps multi (420-324-AH)
+	Date:		1 septembre 2023
 
-## Getting Started
+# LANCER L'APPLICATION
 
-This project is a starting point for a Flutter application.
+    flutter run à la racine du projet.
 
-A few resources to get you started if this is your first Flutter project:
+# ÉNONCÉ/DESCRIPTION
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    structure de répertoire sous lib, 
+    fichier de configuration, 
+    assets, 
+    import de package utile, 
+    modification au fichier pubspec.yaml,
+    modification au fichier analysis_options.yaml,
+    ...
+    et plusieurs autres choses pour faire un bon patron de projet Flutter réutilisable
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
