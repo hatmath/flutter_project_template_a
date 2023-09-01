@@ -20,5 +20,5 @@
     modification au fichier pubspec.yaml,
     modification au fichier analysis_options.yaml,
     ...
-    et plusieurs autres choses pour faire un bon patron de projet Flutter réutilisable
+    et plusieurs autres choses pour faire un bon patron de projet Flutter réutilisable (J'ose croire :)
 
