@@ -6,7 +6,7 @@ class MyDrawer extends StatelessWidget {
   final TabController tabController;
   final List<MyTab> tabs;
 
-  const MyDrawer({required this.tabController, required this.tabs});
+  const MyDrawer({required this.tabController, required this.tabs, super.key});
 
   @override
   Widget build(BuildContext context) {

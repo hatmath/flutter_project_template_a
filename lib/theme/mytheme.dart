@@ -1,7 +1,7 @@
 
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 enum ThemeOption {
   mix,
@@ -87,7 +87,7 @@ class MyGlobalTheme {
 
 class MyAppBarTheme {
   static final AppBarTheme appBarThemeExample = AppBarTheme(
-    backgroundColor: Color.fromARGB(255, 119, 69, 35), toolbarTextStyle: const TextTheme(
+    backgroundColor: const Color.fromARGB(255, 119, 69, 35), toolbarTextStyle: const TextTheme(
       titleLarge: TextStyle(
         color: Color.fromARGB(255, 147, 210, 214),
         fontSize: 20,

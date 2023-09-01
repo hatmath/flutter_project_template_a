@@ -6,11 +6,14 @@ import '../widget/mytabbar.dart';
 
 
 class MyHomePage extends StatefulWidget {
+
+  const MyHomePage ({super.key});
+
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  MyHomePageState createState() => MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
+class MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
   @override

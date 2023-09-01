@@ -65,7 +65,7 @@ class MyIcon {
       return Icon(iconData);
     } else {
       // Gérez le cas où l'icône n'est pas trouvée
-      return Icon(Icons.error);
+      return const Icon(Icons.error);
     }
   }
 

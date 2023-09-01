@@ -5,7 +5,7 @@ class MyTabBar extends StatelessWidget {
   final TabController tabController;
   final List<MyTab> tabs;
 
-  MyTabBar({required this.tabController, required this.tabs});
+  const MyTabBar({required this.tabController, required this.tabs, super.key});
 
   @override
   Widget build(BuildContext context) {
