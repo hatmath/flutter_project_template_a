@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import '../theme/mytheme.dart';
+import '../config/myconfig.dart';
 
 class MyDrawer extends StatelessWidget {
   final TabController tabController;
+  final List<MyTab> tabs;
 
-  const MyDrawer({required this.tabController});
+  const MyDrawer({required this.tabController, required this.tabs});
 
   @override
   Widget build(BuildContext context) {
@@ -14,34 +16,28 @@ class MyDrawer extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             decoration: BoxDecoration(
-              color: MyGlobalTheme.darkTheme.drawerTheme.shadowColor, // Utilisation du darkDrawerTheme
-              // color: MyTheme.darkTheme.secondaryHeaderColor
+              color: MyGlobalTheme.darkTheme.drawerTheme.shadowColor,
             ),
             child: Text(
-              'Menu',
+              tabs[tabController.index].drawerTitle ?? 'Not configured yet!',
               style: TextStyle(
-                color: MyGlobalTheme.darkTheme.primaryColorLight, // Utilisation du darkDrawerTheme
+                color: MyGlobalTheme.darkTheme.primaryColorLight,
                 fontSize: 24,
               ),
             ),
           ),
-          ListTile(
-            title: Text('Tab 1'),
-            onTap: () {
-              Navigator.pop(context);
-              tabController.animateTo(0);
-            },
-          ),
-          ListTile(
-            title: Text('Tab 2'),
-            onTap: () {
-              Navigator.pop(context);
-              tabController.animateTo(1);
-            },
-          ),
+          for (int index = 0; index < tabs.length; index++)
+            ListTile(
+              title: Text(tabs[index].text),
+              onTap: () {
+                Navigator.pop(context);
+                tabController.animateTo(index);
+              },
+            ),
         ],
       ),
     );
   }
 }
+
 
