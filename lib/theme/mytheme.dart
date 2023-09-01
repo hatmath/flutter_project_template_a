@@ -77,7 +77,7 @@ class MyGlobalTheme {
   // Uncomment this line if you want to let the device system mode control the theme mode
   // static ThemeMode themeMode = ThemeMode.system;
 
-  // Sans le package flex_color_scheme
+  // Le suite c'est si on ne veux pas utiliser le package flex_color_scheme
   static ThemeData basicThemeData = ThemeData(
     primarySwatch: Colors.blue,
     visualDensity: VisualDensity.adaptivePlatformDensity,
